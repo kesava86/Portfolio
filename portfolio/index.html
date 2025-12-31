@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./section1.css">
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav class="navbar">
@@ -19,9 +20,22 @@
         </ul>
     </nav>
 
+    <nav class="navbar-menu">
+        <div class="logo">K Kesava</div>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="menu-bar">
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <section class="section-1">
         <div class="section-1-1">
-            <img src="./Images/Passport_Photo.jpg" alt="profile_photo">
+            <img src="./Images/Passport_Photo-removebg-preview.jpg" alt="profile_photo">
         </div>
         <div class="section-1-2">
             <span class="section-1-2-1">Hello I'm</span>
@@ -30,8 +44,8 @@
             <p>Computer Science graduate with a solid foundation in programming, focused on building efficient solutions and 
 continuously learn new technologies to contribute effectively in a professional work environment. </p>
             <div class="btns">
-                <button>Download CV</button>
-                <button>Contact Info</button>
+                <a href="./Resume/Kesava_resumeeeee.pdf" download="Kesava_resumeeeee.pdf">Download CV</a>
+                <button onclick="window.location.href='tel:+918688064903'">Contact Info</button>
             </div>
             <div class="social">
                 <img src="./Images/linkedin.png" alt="linkedin">
@@ -39,6 +53,8 @@ continuously learn new technologies to contribute effectively in a professional 
             </div>
         </div>
     </section>
+
+    
 
 </body>
 </html>
