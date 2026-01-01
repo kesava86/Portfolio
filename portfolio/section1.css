@@ -9,6 +9,7 @@
     margin-left: 100px;
 }
 .section-1-1 img{
+    margin-top: 20px;
     width: 400px;
     border-radius: 50%;
     height: 400px;
@@ -90,5 +91,49 @@ h1{
 
 .social img:hover{
     transform: scale(0.9);
+}
+
+
+@media (max-width:1024px) {
+    .section-1{
+        flex-direction: column;
+    }
+
+    .section-1-1{
+        margin-left: 0px ;
+    }
+
+    .section-1-2{
+        align-items: center;
+    }
+    p{
+        text-align: center;
+        width: 70%;
+    }
+
+}
+@media (max-width:767px) {
+    .section-1{
+        flex-direction: column;
+    }
+
+    .section-1-1 img{
+        width: 300px;
+        height: 300px;
+    }
+    .section-1-2{
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    p{
+        text-align: center;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .section-1-1{
+        margin-top: 50px;
+    }
+
 }
 
