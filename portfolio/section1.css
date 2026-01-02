@@ -97,6 +97,8 @@ h1{
 @media (max-width:1024px) {
     .section-1{
         flex-direction: column;
+        height: 100%;
+        margin-bottom: 50px;
     }
 
     .section-1-1{
@@ -114,6 +116,9 @@ h1{
 }
 @media (max-width:767px) {
     .section-1{
+        height: 100%;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
         flex-direction: column;
     }
 
