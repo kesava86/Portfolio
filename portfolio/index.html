@@ -1,91 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K Kesava | Portfolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./section1.css">
-    <link rel="stylesheet" href="./section2.css">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>K Kesava | Full Stack Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">K Kesava</div>
-        <ul class="menu-bar">
+        <h2 class="logo">K Kesava</h2>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
-            <li><a href="#project">Project</a></li>
+            <li><a href="#projects">Project</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <nav class="navbar-menu">
-        <div class="logo">K Kesava</div>
-        <div class="hamburger">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="menu-bar">
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <section class="section-1">
-        <div class="section-1-1">
-            <img src="./Images/Passport_Photo-removebg-preview.jpg" alt="profile_photo">
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <!-- LEFT IMAGE -->
+        <div class="image-container">
+            <img src="./Images/Passport_Photo-removebg-preview.jpg" alt="K Kesava">
         </div>
-        <div class="section-1-2">
-            <span class="section-1-2-1">Hello I'm</span>
+
+        <!-- RIGHT CONTENT -->
+        <div class="content">
+            <p class="intro">Hello I'm</p>
             <h1>K Kesava</h1>
-            <span class="section-1-2-3">Fullstack Developer</span>
-            <p>Computer Science graduate with a solid foundation in programming, focused on building efficient solutions and 
-continuously learn new technologies to contribute effectively in a professional work environment. </p>
-            <div class="btns">
-                <a href="./Resume/Kesava_resumeeeee.pdf" download="Kesava_resumeeeee.pdf">Download CV</a>
-                <button onclick="window.location.href='tel:+918688064903'">Contact Info</button>
-            </div>
-            <div class="social">
-                <img src="./Images/linkedin.png" alt="linkedin">
-                <img src="./Images/github.png" alt="github">
-            </div>
-        </div>
-    </section>
+            <h3>Fullstack Developer</h3>
 
-    <section class="section-2">
-        <div class="section-2-1">
-            <span>Get To Know More</span>
-            <h1>About Me</h1>
-        </div>
+            <p class="description">
+                Computer Science graduate with a solid foundation in programming,
+                focused on building efficient solutions and continuously learning
+                new technologies to contribute effectively in a professional work
+                environment.
+            </p>
 
-        <div class="section-2-2">
-            <div class="section-2-2-1">
-                <img src="./Images/Passport_Photo-removebg-preview.jpg" alt="profile_photo">
+            <div class="buttons">
+                <a href="./Resume/Kesava_resumeeeee.pdf" class="btn outline" download>Download CV</a>
+                <a href="#contact" class="btn solid">Contact Info</a>
             </div>
-            <div class="section-2-2-2">
-                <div class="section-2-2-2-1">
-                    <div class="box">
-                        <img src="./Images/experience.png" alt="Experience">
-                        <span>Academic Experience</span><span>Projects</span><span>Events & Workshops</span>
-                    </div>
-                    <div class="box">
-                        <img src="./Images/education.png" alt="Education">
-                        <span>Education</span><span>Bachelors of Technology</span><span>Computer Science and Engineering</span>
-                    </div>
-                </div>
-                <p class="p1">
-                    I have a strong academic background in computer science, where I gained both theoretical knowledge and practical experience. During my studies, I worked on academic projects that helped me understand core concepts such as programming, database management, and problem-solving. I actively participated in technical workshops and events to improve my skills and stay updated with industry trends. These experiences helped me develop logical thinking, teamwork, and hands-on experience in building real-world applications.
-                </p>
+
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/k-kesava-03bb4027b/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/kesava86/" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
             </div>
         </div>
 
     </section>
 
-
-    <script src="./script.js"></script>
-
+    <script src="https://kit.fontawesome.com/6b8bea1d6f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
