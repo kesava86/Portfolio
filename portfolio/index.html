@@ -3,73 +3,179 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>K Kesava | Full Stack Developer</title>
+    <title>K Kesava | Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <h2 class="logo">K Kesava</h2>
+    <!-- ================= NAVBAR ================= -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fs-4 fw-bold" href="#">K Kesava</a>
 
-        <!-- HAMBURGER -->
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto fs-5">
+                    <li class="nav-item"><a class="nav-link pe-4" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link pe-4" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link pe-4" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Project</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
     </nav>
 
+    <!-- ================= HERO SECTION ================= -->
+    <section class="min-vh-100 d-flex align-items-center text-light">
+        <div class="container">
+            <div class="row align-items-center">
 
-    <!-- HERO SECTION -->
-    <section class="hero">
+                <!-- LEFT : IMAGE -->
+                <div class="col-md-5 text-center mb-4 mb-md-0">
+                    <img src="./Images/Passport_Photo-removebg-preview.jpg" alt="Profile"
+                        class="rounded-circle img-fluid" style="max-width: 340px;">
+                </div>
 
-        <!-- LEFT IMAGE -->
-        <div class="image-container">
-            <img src="./Images/Passport_Photo-removebg-preview.jpg" alt="K Kesava">
-        </div>
+                <!-- RIGHT : CONTENT -->
+                <div class="col-md-7">
+                    <p class="text-secondary mb-1">Hello, I'm</p>
 
-        <!-- RIGHT CONTENT -->
-        <div class="content">
-            <p class="intro">Hello I'm</p>
-            <h1>K Kesava</h1>
-            <h3>Fullstack Developer</h3>
+                    <h1 class="fw-bold">K Kesava</h1>
 
-            <p class="description">
-                Computer Science graduate with a solid foundation in programming,
-                focused on building efficient solutions and continuously learning
-                new technologies to contribute effectively in a professional work
-                environment.
-            </p>
+                    <h4 class="mb-3">
+                        And I'm a <span class="text-info">Fullstack Developer</span>
+                    </h4>
 
-            <div class="buttons">
-                <a href="./Resume/Kesava_resumeeeee.pdf" class="btn outline" download>Download CV</a>
-                <a href="#contact" class="btn solid">Contact Info</a>
+                    <p class="text-secondary">
+                        Computer Science graduate with a solid foundation in programming, focused on building efficient
+                        solutions and
+                        continuously learn new technologies to contribute effectively in a professional work
+                        environment.
+                    </p>
+
+                    <!-- BUTTONS -->
+                    <div class="mt-4">
+                        <a href="./Resume/Kesava_resumeeeee.pdf" download class="btn btn-outline-light me-3">
+                            Download CV
+                        </a>
+                        <a href="#contact" class="btn btn-light">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <!-- SOCIAL ICONS -->
+                    <div class="mt-4">
+                        <a href="https://www.linkedin.com/in/k-kesava-03bb4027b/" target="_blank"
+                            class="text-light fs-4 me-3 text-decoration-none">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/kesava86/" target="_blank"
+                            class="text-light fs-4 text-decoration-none">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>
+
             </div>
-
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/k-kesava-03bb4027b/" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/kesava86/" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-            </div>
         </div>
-
     </section>
 
-    <script src="https://kit.fontawesome.com/6b8bea1d6f.js" crossorigin="anonymous"></script>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section-padding">
+        <div class="container text-center">
+            <h2>About Me</h2>
+            <p>
+                I am a beginner Full Stack Developer with knowledge of HTML, CSS, JavaScript,
+                Bootstrap and Java. I love building simple and clean web applications.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+
+            <div class="mt-4">
+                <h5>NSS Volunteer</h5>
+                <p>Worked as a volunteer and participated in social service activities.</p>
+            </div>
+
+            <div class="mt-3">
+                <h5>Student / Fresher</h5>
+                <p>Practicing web development and building small projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <h2 class="text-center">Projects</h2>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">Personal portfolio using HTML, CSS, Bootstrap.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Todo App</h5>
+                            <p class="card-text">Simple todo app using JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mini Web Pages</h5>
+                            <p class="card-text">Practice pages using Bootstrap components.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section-padding bg-dark text-white">
+        <div class="container text-center">
+            <h2>Contact Me</h2>
+
+            <p>Email: kesava@email.com</p>
+            <p>Phone: +91 XXXXX XXXXX</p>
+
+            <button class="btn btn-light" onclick="showMessage()">Say Hi</button>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
     <script src="script.js"></script>
+
 </body>
 
 </html>

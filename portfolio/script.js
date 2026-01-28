@@ -1,3 +1,3 @@
-function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("show");
+function showMessage() {
+  alert("Thanks for visiting my portfolio!");
 }
