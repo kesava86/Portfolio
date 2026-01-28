@@ -5,8 +5,9 @@ body {
   background-color: #0d0d0d;
   color: #e0e0e0;
   padding-top: 70px;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
 
 /* SECTIONS */
 .section-padding {
@@ -16,7 +17,9 @@ body {
 /* HEADINGS */
 h1, h2, h5 {
   color: #ffffff;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 /* PARAGRAPH */
 p {
@@ -32,14 +35,17 @@ p {
 
 .hero-title {
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   color: #bfbfbf;
   margin-bottom: 30px;
+  font-family: 'Roboto', sans-serif;
 }
+
 
 /* EXPERIENCE & PROJECT CARDS */
 .card {
