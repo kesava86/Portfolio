@@ -1,8 +1,3 @@
-function showMessage() {
-  alert("Thanks for visiting my portfolio!");
-}
-
-
 const toggler = document.getElementById("menuToggleBtn");
   const icon = document.getElementById("menuIcon");
 
